@@ -28,7 +28,7 @@ function get_login() {
       let pageht = ''; // Initialize the pageht variable
       if (login === 'timo' || login === 'brigisusi') {
         pageht = "panel1.html";
-      } else if (login === 'lsh') {
+      } else if (login === 'ilsh') {
         pageht = "panel2.html";
       } else if (login === 'stepuf') {
         pageht = "panel.html";
