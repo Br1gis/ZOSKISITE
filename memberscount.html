@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Заголовок супер сайта</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="memberstyle.css">
+        
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+        
+    </head>
+
+    <body>
+        <h1>Админ-панель</h1>
+
+        
+
+        <fieldset class = 'gayyy' id = "bebra" style="color: black;" style="overflow-y:scroll"><ul id = "names-list"></ul>
+        </fieldset>
+        <!-- <style>
+            body{
+              border: 2px solid #000000;
+        }
+            p{
+              text-indent: 30px;
+              border: 2px solid #020202;
+              padding: 10px 20px 10px 20px;
+              margin: 20px auto;
+              width: 400px;
+        }
+        </style> -->
+
+        <!-- <script>
+            // Определение функции для выполнения GET-запроса
+            function getData() {
+              fetch('/get_data')  // Здесь должен быть URL вашего серверного скрипта
+                .then(response => response.json())
+                .then(data => {
+                  const container = document.querySelector('#bebra');
+          
+                  // Очистка содержимого контейнера
+                  container.innerHTML = '';
+          
+                  // Построчное добавление данных внутри рамки fieldset
+                  data.data.forEach(row => {
+                    const p = document.createElement('p');
+                    p.textContent = `Name: ${row[0]}`;
+                    container.appendChild(p);
+                  });
+                });
+            }
+          
+            // Выполнение функции getData() при загрузке страницы
+            window.addEventListener('load', getData);
+        </script> -->
+
+
+        <button onclick="leave_back_menu()">Выйти в меню</button>
+
+        <p><button class = "buff" onclick="clear_cmd()">Очистить консоль</button></p>
+
+        <h5>Cчётчик участников</h5>
+
+
+        <script src="app.js"></script>
+        
+
+        
+
+        
+
+    </body>
+
+
+</html>
